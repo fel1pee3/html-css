@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site com vários dispositivos ou aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 1050px)" srcset="imgs/foto-m.png" type="image/png">
+        <img src="imgs/foto-g.png" alt="Imagem grande">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Reproduzir áudios em HTML5</p>
+    <audio src="midia/We Wish You A Merry Christmas - DJ Williams.mp3" controls autoplay></audio>
+    <audio preload="metadata" autoplay loop>
+        <source src="midia/We Wish You A Merry Christmas - DJ Williams.mp3" type="audio/mpeg">
+        <source src="midia/We Wish You A Merry Christmas - DJ Williams.ogg" type="audio/ogg">
+        <source src="midia/We Wish You A Merry Christmas - DJ Williams.wav" type="audio/wav">
+        <p>Infelismente seu navegador não consegue reprpoduzir áudios</p>
+        <a href="midia/We Wish You A Merry Christmas - DJ Williams.mp3">Clique aqui bara baixar o arquivo do áudio</a>
+    </audio>
+</body>
+</html>
